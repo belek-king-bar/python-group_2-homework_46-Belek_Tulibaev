@@ -1,0 +1,65 @@
+<script type="application/javascript">
+	let myArray = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
+	for(var i = 0; i < myArray.length; i ++) {
+		if (myArray[i] == 'молоко') {
+			console.log('Хорошо')
+		}
+		else if (myArray[i]== 'пиво') {
+			console.log('Плохо')
+		}
+	}
+</script>
+
+<script type="application/javascript">
+	var myArray1 = [1, 5, 12, 4, 3];
+	var myArray2 = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+	var myArray3 = [3, 10, 17];
+
+	function average(array) {
+		var sum = 0;
+		var quantity = array.length;
+		for (var i = 0; i < array.length; i++){
+
+		sum += array[i];
+	
+		}
+
+		return sum / quantity;
+	}
+
+	console.log(average(myArray1));
+	console.log(average(myArray2));
+	console.log(average(myArray3));
+
+</script>
+
+<script type="application/javascript">
+	var some_number = prompt("У квадратного стола отпилили один угол. Сколько теперь углов у него стало?");
+	if (some_number === 5 || some_number ==='пять') {
+		alert('Ответ верный!');
+	}
+	else {
+		alert('Ответ неверный');
+	}
+</script>
+
+<script type="application/javascript">
+	var Duck = {
+		name: 'Дональд'
+		color: 'белый'
+		old: 1
+
+		toStr: function() {
+			console.log(this.name, this.color, this.old)
+		}
+
+		say: function() {
+			console.log('кря кря')
+		}
+
+	};
+
+	Duck.toStr();
+	Duck.say();
+
+</script>
